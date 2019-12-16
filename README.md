@@ -3,23 +3,25 @@
 ## Problem : 
 Bir bağlı listede tekrar eden sayıları bulup çıkarmak.
 
-## Çözüm 1 : 
-Listenin tüm elemanlarını diğer elemanlar ile karşılaştırıp tekrar eden sayıları çıkarmak. Time Complexity O(n^2)
-
+## Çözüm 1:
+Dizide ki aynı elemanları for döngüsü kullanarak çıkarma.
 
 ## Çözüm 2 : 
-Listeyi önce sıralayıp sonrasında tekrar eden sayıları çıkarmak. Bu çözüm için Merge Sort kullanıldı. O yüzden Time Complexity O(nlogn)
+Listenin tüm elemanlarını diğer elemanlar ile karşılaştırıp tekrar eden sayıları çıkarmak.
 
-## Time Complexity :
-Time complexity bir algoritmanın çalışması için gerekli olan süredir. Ancak buradaki süre, saniyeleri hesaplayarak değil, kaç tane işlem gerçekleştirdiğine göre hesaplanmaktadır. Uygulama tarafından gerçekleştirilen işlem sayısı, veri setinin büyüklüğüne ve o veri setindeki elemanlarına sırasına göre belirlenir.
-## O(n^2) : 
-İnput büyüklüğünün karesi ile doğru orantılıdır.Eğer input büyüklüğü 2 ise, 4 işlem gerçekleşir
+## Çözüm 3 : 
+Listeyi önce sıralayıp sonrasında tekrar eden sayıları çıkarmak. Bu çözüm için Merge Sort kullanıldı. 
+
 
 ## Merge Sort (Birleştirme Sıralaması) :
 Verinin hafızada sıralı tutulması için geliştirilmiştir. Basitçe inceleyecek olursak diziyi ikişer elemanlı kalana kadar parçalara iner sürekli olarak ikiye böler.  Sonra bu parçaları kendi içlerinde önce sıralar ve daha sonra birleştirme işlemini gerçekleştirir. Sonuçta elde edilen dizi sıralı dizinin kendisi olur.
 
 
+## İlk çözüm olarak veri yapısı kullanılmamış iç içe for döngüsü kullanılmıştır. İkinci çözüm olarak linked-list veri yapısı kullanılmıştır. 
 
+## Bağlı liste : 
+Herhangi bir tipten node’ların (düğümlerin) yine kendi tiplerinden düğümlere işaret etmesi (point) ile oluşan zincire verilen isimdir.
 
-
+Dizi de ise eleman ekleme ve eleman silme işlemleri için, eleman eklenen (veya silinen) konumun sağındaki tüm dizi elemanlarının kaydırılması gerekir. Oysa liste yapılarında eleman (düğüm) ekleme ve silme işlemi sadece birkaç bağlantının güncellenmesinden ibarettir. Dizi, bellekte ardışıl konumlarda oluşturulur; fakat dizinin eleman sayısı önceden bilinmeyebilir. Bu durumda dizi
+az elemanlı oluşturulursa yetersiz kalabilir; çok elemanlı açılırsa ise bellek israfı söz konusu olabilir. 
 
