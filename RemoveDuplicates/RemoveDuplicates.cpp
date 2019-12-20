@@ -44,7 +44,7 @@ int main()
 
 
 
-"İKİNCİ ÇÖZÜM"
+"İKİNCİ VE ÜÇÜNCÜ ÇÖZÜM"
 #include "pch.h"
 #include <iostream>
 
